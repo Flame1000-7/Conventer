@@ -5,7 +5,7 @@ import Page1 from './pages/Page1'
 import Page2 from './pages/Page2'
 
 function App() {
-  const [page, setPage] = useState("Page1")
+  const [page, setPage] = useState("MainPage")
 
   let Component = null;
   if (page==="Page1") {
@@ -17,6 +17,7 @@ function App() {
 
   return (
     <div className='wrap'>
+      <button className='distance' onClick={()=>setPage("Page1")}> distance</button>
       <button className='distance' onClick={()=>setPage("Page2")}> distance</button>
       {Component}
     </div>

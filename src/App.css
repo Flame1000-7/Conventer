@@ -4,3 +4,14 @@
     background-color: red;
     margin: 10px;
 }
+.SantiMeters-Meters{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+}
+.mama,
+input,
+p{
+    margin: 10px;
+}
