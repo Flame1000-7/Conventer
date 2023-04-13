@@ -1,17 +1,30 @@
-.distance{
+.distance {
     width: 100px;
     height: 100px;
     background-color: red;
     margin: 10px;
 }
-.SantiMeters-Meters{
+.SantiMeters-Meters {
     display: flex;
     flex-direction: column;
-    width: 200px;
     height: 200px;
 }
-.mama,
+
 input,
-p{
+p {
     margin: 10px;
+}
+.values {
+    display: flex;
+    flex-direction: row;
+}
+.inputs,
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.mama {
+    margin-right: auto;
+    margin-left: 10px;
+    width: 173px;
 }
