@@ -16,7 +16,7 @@ function App() {
   }
 
   return (
-    <div className='wrap'>
+    <div className='MainWrap'>
       <button className='distance' onClick={()=>setPage("Page1")}> distance</button>
       <button className='distance' onClick={()=>setPage("Page2")}> valume</button>
       {Component}

@@ -12,8 +12,9 @@ export default function Page1() {
     };
     return (
         <div className="wrap">
-            <p>SantiMeters-Meters:</p>
+           
             <div className="SantiMeters-Meters">
+            <p>SantiMeters-Meters:</p>
                 <div className="values">
                     <div className="inputs">
                         <input type="number" onChange={changeSanti} />
@@ -41,6 +42,7 @@ export default function Page1() {
                 <p className="mres">{san} - result meters</p>
                 <p className="sres">{met} - result santimeters</p>
             </div>
+
         </div>
     );
 }

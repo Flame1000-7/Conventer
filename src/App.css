@@ -28,3 +28,11 @@ p {
     margin-left: 10px;
     width: 173px;
 }
+.liters-CubicMeters {
+    display: flex;
+    flex-direction: column;
+}
+.wrap{
+    display: flex;
+    flex-direction: row;
+}
