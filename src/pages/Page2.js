@@ -1,5 +1,7 @@
 import { useState } from "react";
 export default function Page2() {
+    const [litr, setLitr] = useState(0);
+    const [metr, setMetr] = useState(0);
     const [lit, setLit] = useState(0);
     const [cubmeters, setCubmeters] = useState(0);
     const changeLit = (e) => {
@@ -10,9 +12,8 @@ export default function Page2() {
     };
     return (
         <div className="wrap">
-            
             <div className="liters-CubicMeters">
-            <p>liters - Cub meters</p>
+                <p>liters - Cub meters</p>
                 <div className="values">
                     <div className="inputs">
                         <input type="number" onChange={changeLit} />
@@ -27,13 +28,17 @@ export default function Page2() {
                 <button
                     className="mama"
                     onClick={() => {
-                        setCubmeters(lit / 1000);
+                        if (lit) {
+                            setMetr(lit / 1000);
+                        } else {
+                            setLitr(cubmeters * 1000);
+                        }
                     }}
                 >
                     Count
                 </button>
-                <p className="vres">{cubmeters} - result Cub Meters</p>
-                <p className="vres">{lit} - result Liters</p>
+                <p className="vres">{metr} - result Cub Meters</p>
+                <p className="vres">{litr} - result Liters</p>
             </div>
             
         </div>
